@@ -26,7 +26,7 @@ gulp --version
 ## Instalación
 - Lo primero que debe hacer es clonar este repositorio en su equipo para poder realizar las pruebas localmente.
 ```
-git clone //pendiente
+git clone https://github.com/andreslarrotta/manual_front-end_hubdigital.git
 ```
 - Luego se abre la consola, se ubica la carpera donde clonó el repositorio.
 ### Mac
