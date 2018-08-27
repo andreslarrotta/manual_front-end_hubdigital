@@ -1,3 +1,3 @@
 $(function(){
-    console.log('Hola mundo!');
+    console.log('Hola Mundo');
 });

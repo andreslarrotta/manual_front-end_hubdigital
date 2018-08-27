@@ -27,7 +27,7 @@ gulp.task('minificadorhtml', function () {
 });
 gulp.task('minificadorjs', function () {
     gulp.src('assets/js/*.js')
-        .pipe(concat('eloqua.js'))
+        .pipe(concat('main.js'))
         .pipe(jsmin())
         .pipe(rename({ suffix: '.min' }))
         .pipe(gulp.dest('eloqua/js/'))
@@ -35,7 +35,7 @@ gulp.task('minificadorjs', function () {
 });
 gulp.task('minificadorcss', function () {
     return gulp.src('assets/css/*.css')
-        .pipe(concatCss("eloqua.css"))
+        .pipe(concatCss("main.css"))
         .pipe(cleanCSS({ compatibility: 'ie8' }))
         .pipe(rename({ suffix: '.min' }))
         .pipe(gulp.dest('eloqua/css/'))

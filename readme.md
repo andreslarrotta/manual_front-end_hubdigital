@@ -46,7 +46,7 @@ npm install
 
 **assets** - Es el directorio donde se encontrarán las respectivas carpetas que se procesarán para subir los archivos al eloqua
 
-**eloqua** - Es el directorio donde se encontrarán se exportarán los archivos mitificados compatibles para todos los navegadores, de igual manera las imágenes y si es el caso los archivos preprocesados de sass.
+**eloqua** - Es el directorio donde se encontrarán los archivos mitificados compatibles para todos los navegadores, de igual manera las imágenes y si es el caso los archivos preprocesados de sass.
 
 **index.html** - Es el archivo que será emplazado por el maquetador para poder usarlo y generar el archivo minificado
 
