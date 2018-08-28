@@ -28,6 +28,9 @@ gulp --version
 ```
 git clone https://github.com/andreslarrotta/manual_front-end_hubdigital.git
 ```
+o
+descargar el .zip
+
 - Luego se abre la consola, se ubica la carpera donde clonó el repositorio.
 ### Mac
 - Haz clic en el icono "Finder" situado en el Dock, luego selecciona "Aplicaciones > Utilidades"
