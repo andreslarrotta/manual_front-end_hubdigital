@@ -42,7 +42,7 @@ gulp.task('minificadorcss', function () {
         .pipe(browserSync.stream())
 });
 gulp.task('sass', function () {
-    return gulp.src('assets/sass/*.scss')
+    return gulp.src('assets/scss/*.scss')
       .pipe(sass().on('error', sass.logError))
       .pipe(gulp.dest('assets/css/'));
   });
@@ -75,7 +75,7 @@ gulp.task('watch', ['browser-sync', 'minificadorjs', 'optimizadorjpg', 'optimiza
     gulp.watch('index.html', ['browser-sync']);
     gulp.watch('assets/js/*.js', ['minificadorjs']);
     gulp.watch('./*.html', ['minificadorhtml']);
-    gulp.watch('assets/sass/*', ['sass']);
+    gulp.watch('assets/scss/*', ['sass']);
     gulp.watch('assets/css/*.css', ['minificadorcss']);
     gulp.watch('assets/img/*', ['optimizadorjpg','optimizadorpng']);
 })
