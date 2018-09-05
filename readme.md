@@ -4,8 +4,7 @@ De igual manera las imágenes dentro de nuestros sitios
 
 ## Pre requisitos
 - [NodeJS](https://nodejs.org/)
-- Instalar Gulp Globalmente
-Esto de debe hacer solo una vez
+- Instalar Gulp Globalmente (Esto de debe hacer solo una vez)
 ```
 npm install -g gulp
 ```
@@ -40,9 +39,14 @@ descargar el .zip
 - Abrir Consola de Comandos con WIN + R en Windows 10
 - Escribir cmd
 
+## Ubicarse en la carpeta para ejecutar el programa
+```
+cd (arrastra la carpeta en la consola)
+```
+
 - Se ejecuta el siguiente comando en la consola para descagar las librerías necesarias.
 ```
-npm install
+gulp
 ```
 
 ## Directorios del proyecto
@@ -82,3 +86,42 @@ Todos los archivos se van a generar en la carpeta que eloqua.
 **eloqua/img** - Podrá encontrar todas las imágenes .png y .jpg optimizadas para poder subirlas al eloqua.
 
 **eloqua/** - En la carpeta eloqua podrá ver los archivos .html minificados para poder subirlos al eloqua 
+
+
+## Tareas independientes
+
+```
+gulp minificadorhtml
+```
+```
+gulp minificadorjs
+```
+```
+gulp minificadorcss
+```
+```
+gulp unminificadorhtml
+```
+```
+gulp sass
+```
+```
+gulp optimizadorjpg
+```
+```
+gulp optimizadorpng
+```
+```
+gulp optimizadorsvg
+```
+```
+gulp optimizadorgif
+```
+**Todas las tareas exportan minificados unicamente los archivos que este adecuadamente ordenados en la carpeta assets** 
+
+
+
+
+
+
+
