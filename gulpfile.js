@@ -9,6 +9,7 @@ var cleanCSS = require('gulp-clean-css');
 var concatCss = require('gulp-concat-css');
 var concat = require('gulp-concat');
 var sass = require('gulp-sass');
+var htmlbeautify = require('gulp-html-beautify');
 
 var outputDir = './';
 
@@ -41,6 +42,14 @@ gulp.task('minificadorcss', function () {
         .pipe(gulp.dest('eloqua/css/'))
         .pipe(browserSync.stream())
 });
+gulp.task('unminificadorhtml', function() {
+    gulp.src('./*.html')
+      .pipe(htmlbeautify({
+          indentSize: 4,
+          "jslint_happy": true,
+        }))
+      .pipe(gulp.dest('./'))
+  });
 gulp.task('sass', function () {
     return gulp.src('assets/scss/*.scss')
       .pipe(sass().on('error', sass.logError))
